@@ -7,3 +7,6 @@ start:
 test:
 	# cd tst && ../vendor/bin/phpunit
 	./vendor/bin/phpunit tst
+
+lint:
+    find . -type f -name '*.php' -exec php -l {} \;
